@@ -1,4 +1,5 @@
 var current = 0;
+var a = document.getElementsByTagName("a");
 function slide(x){
   var image = document.getElementsByClassName('img');
   current = current + x;

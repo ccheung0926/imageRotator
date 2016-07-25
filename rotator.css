@@ -40,3 +40,12 @@
   top: 40%;
   right: 0px;
 }
+
+.circle{
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+.empty{
+  left: 280px;
+}
