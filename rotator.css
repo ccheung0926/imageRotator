@@ -4,10 +4,11 @@
   margin: 20px auto;
   position: relative;
 }
-#img{
+.img{
   height: 458px;
   width: 650px;
   position: absolute;
+  transition: opacity .5s ease-in;
 }
 #left_holder{
   height: 450px;

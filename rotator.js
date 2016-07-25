@@ -1,13 +1,16 @@
-var imagecount = 1;
-var total = 3;
+var current = 0;
 function slide(x){
-  var Image = document.getElementById('img');
-  imagecount = imagecount + x;
-  if(imagecount > total){
-    imagecount = 1;
+  var image = document.getElementsByClassName('img');
+  current = current + x;
+  for(var i = 0; i < image.length; i++){
+    image[i].style.opacity = 0;
   }
-  if(imagecount < 1){
-    imagecount = total;
+  if(current > image.length - 1){
+    current = 0;
   }
-  Image.src = "images/image" + imagecount + ".jpg";
+  image[current].style.opacity = 1;
 }
+
+setInterval(function(){
+  slide(1);
+},3000);
